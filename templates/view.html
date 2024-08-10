@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Employee Management System</h1>
+    <h2>Employee Details</h2>
+    <table border = '1px'>
+        <thead>
+        <th>ID</th>
+<th>Name</th>
+<th>salary</th>
+<th>Department</th>
+<th>Edit</th>
+        
+        </thead>
+        <tr>
+            {% for i in sqldata%}
+<th>  {{i[0]}} </th>
+<th>  {{i[1]}}  </th>
+<th> {{i[2]}}   </th>
+<th>  {{i[3]}}  </th>
+<th></th>
+        </tr>
+        {% endfor%}
+    </body>
+    
+</html>
